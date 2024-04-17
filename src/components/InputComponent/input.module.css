@@ -1,0 +1,42 @@
+.inputForm {
+  display: flex;
+  outline: blue;
+  border: none;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04), 0 2px 18px rgba(0, 0, 0, 0.08);
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.inputForm:hover {
+  border: 1px solid #0083ff;
+}
+.inputForm:focus {
+  outline: #0083ff;
+}
+.input[type="text"] {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: none;
+}
+.input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1023px) {
+  /* For mobile phones: */
+
+  .inputForm {
+    padding: 34px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inputForm {
+    padding: 20px;
+    font-size: 22px;
+  }
+}

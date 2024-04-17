@@ -1,0 +1,29 @@
+.App {
+  font-family: "Roboto", sans-serif;
+  width: 40vw;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .App {
+    width: 80vw;
+  }
+}
+.App_listTodo {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-user-select: none;
+}
+.App_listTodo::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  /* For mobile phones: */
+  .App {
+    width: 80vw;
+  }
+}

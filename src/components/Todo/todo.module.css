@@ -1,0 +1,69 @@
+.todo {
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.08), 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.9s ease-in-out;
+  margin-bottom: 20px;
+}
+.todoCompleted {
+  color: #9b9b9b;
+}
+
+.deleteBtn {
+  font-size: 22px;
+  display: none;
+}
+.editBtn {
+  font-size: 22px;
+  display: none;
+}
+.todo:hover {
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.2);
+}
+.todo:hover .deleteBtn {
+  display: block;
+}
+.todo:hover .editBtn {
+  display: block;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  width: 30vw;
+  background-color: white;
+}
+.input {
+  width: 100%;
+}
+.input[type="text"] {
+  border: none;
+}
+.input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 1023px) {
+  /* For mobile phones: */
+  .todo {
+    font-size: 32px;
+    padding: 30px;
+  }
+  .deleteBtn {
+    font-size: 35px;
+  }
+  .editBtn {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .todo {
+    font-size: 22px;
+    padding: 20px;
+  }
+  /* For mobile phones: */
+}

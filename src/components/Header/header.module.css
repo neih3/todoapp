@@ -1,0 +1,39 @@
+.dot {
+  color: #0083ff;
+  font-size: 48px;
+}
+.headerTop {
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 28px;
+}
+.headerBottom {
+  font-weight: 700;
+  color: #d8d8d8;
+  font-size: 28px;
+}
+.header {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+  /* For mobile phones: */
+  .dot {
+    font-size: 60x;
+  }
+  .headerTop {
+    font-size: 40px;
+  }
+  .headerBottom {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .headerTop {
+    font-size: 24px;
+  }
+  .headerBottom {
+    font-size: 24px;
+  }
+  /* For mobile phones: */
+}

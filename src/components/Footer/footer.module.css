@@ -1,0 +1,19 @@
+.footer_btn {
+  transition: 0.5s ease-in-out;
+  cursor: pointers;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+.footer_btn:hover {
+  color: #00bfff;
+}
+.footer_btnGroups {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer_btnGroups {
+    font-size: 30px;
+  }
+}
